@@ -1,59 +1,86 @@
-# LivrosAngular
+# 📚 Livros Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+Aplicação web desenvolvida em Angular para gerenciamento de um catálogo de livros, permitindo visualizar, cadastrar e excluir registros de forma simples e intuitiva.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🎓 Trabalho Acadêmico
 
-```bash
-ng serve
+**Trabalho Prático | DGT2809 – Aprofundamento em Desenvolvimento Front-End**
+Faculdade Estácio
+
+---
+
+## 🚀 Funcionalidades
+
+* 📖 Listagem de livros cadastrados
+* ➕ Cadastro de novos livros
+* 🏢 Associação de livros com editoras
+* 🗑️ Exclusão de livros com confirmação
+* 🔄 Atualização automática da lista
+* 🎨 Interface moderna com Bootstrap
+
+---
+
+## 🧠 Tecnologias Utilizadas
+
+* Angular 21 (Standalone Components)
+* TypeScript
+* Bootstrap 5
+* HTML5 + CSS3
+
+---
+
+## 🏗️ Estrutura do Projeto
+
+```
+src/
+ └── app/
+      ├── livro.ts
+      ├── editora.ts
+      ├── controle-livros.ts
+      ├── controle-editora.ts
+      ├── livro-lista/
+      ├── livro-dados/
+      ├── app.routes.ts
+      ├── app.config.ts
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🧩 Funcionalidades Técnicas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* Utilização de **Services** para controle de dados
+* Injeção de dependência via Angular
+* Roteamento com `Router`
+* Formulários com `ngModel`
+* Componentização com Angular Standalone
+* Manipulação de listas com `*ngFor`
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🎯 Objetivo
 
-```bash
-ng generate --help
-```
+Este projeto foi desenvolvido como prática de conceitos fundamentais de Angular, incluindo:
 
-## Building
+* criação de componentes
+* uso de serviços
+* navegação entre páginas
+* manipulação de formulários
+* organização de código em frontend moderno
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 📌 Melhorias Futuras
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+* Persistência com LocalStorage ou API
+* Modal customizado para confirmação
+* Validação visual de formulários
+* Edição de livros
+* Paginação na listagem
 
-## Running unit tests
+---
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## 📄 Licença
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este projeto é apenas para fins educacionais.
