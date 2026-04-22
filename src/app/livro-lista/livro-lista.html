@@ -1,0 +1,49 @@
+<main class="container py-4">
+  <div class="card shadow-sm border-0">
+    <div class="card-body p-4">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+          <h1 class="h3 mb-1">Catálogo de Livros</h1>
+          <p class="text-muted mb-0">Visualize e gerencie os livros cadastrados.</p>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table align-middle table-hover mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Título</th>
+              <th>Resumo</th>
+              <th>Editora</th>
+              <th>Autores</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let livro of livros">
+              <td class="fw-semibold">
+                <div class="d-flex align-items-center justify-content-between gap-2">
+                  <span>{{ livro.titulo }}</span>
+                  <button
+                    class="btn btn-outline-danger btn-sm"
+                    (click)="excluir(livro.codigo)"
+                  >
+                    Excluir
+                  </button>
+                </div>
+              </td>
+              <td>{{ livro.resumo }}</td>
+              <td>{{ obterNome(livro.codEditora) }}</td>
+              <td>
+                <ul class="mb-0 ps-3">
+                  <li *ngFor="let autor of livro.autores">
+                    {{ autor }}
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</main>
